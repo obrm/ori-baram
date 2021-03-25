@@ -1,0 +1,372 @@
+@import 'config';
+@import 'utilities';
+
+// general styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+#logo {
+  font-family: 'Racing Sans One', cursive;
+  font-size: 3rem;
+  color: $light-color;
+}
+
+// Main Nav
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $medium-color;
+    }
+
+    &.current {
+      border-color: $main-color;
+    }
+  }
+}
+
+//Header
+#header {
+  &-home {
+    background: $bg-image no-repeat center right / cover;
+    height: 100vh;
+    color: #fff;
+
+    // Header Content
+    .header-content {
+      text-align: center;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+
+    #logo {
+      margin-top: -0.5rem;
+    }
+  }
+
+  &-inner {
+    background: $bg-image no-repeat 60% 10% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+
+    #logo {
+      margin-top: -0.5rem;
+    }
+  }
+}
+
+.txt-type {
+  .txt {
+    border-right: 0.2rem solid #fff;
+  }
+}
+
+#home {
+  // Home Section A
+  &-a {
+    .home {
+      &-a {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        text-align: center;
+      }
+
+      &-icon {
+        border-radius: 50%;
+        background: $dark-color;
+        color: set-text-color($dark-color);
+        padding: 2rem;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        position: relative;
+        transition: all 1s;
+
+        &:hover {
+          background: $main-color;
+          width: 90px;
+          height: 90px;
+          line-height: 90px;
+        }
+      }
+    }
+  }
+}
+
+// About Sections
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas: 'bioimage bioimage bio bio bio';
+      gap: 1.2rem;
+    }
+
+    // Grid Areas
+    .bio-image {
+      grid-area: bioimage;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $main-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 3rem;
+
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  // About B
+  &-b {
+    h4 {
+      margin-top: 1rem;
+    }
+
+    .progress {
+      overflow: hidden;
+      height: 20px;
+      background: $medium-color;
+      border-radius: 5px;
+      margin-bottom: 0.6rem;
+
+      div {
+        height: 100%;
+        color: #fff;
+        text-align: center;
+        background: $main-color;
+      }
+    }
+  }
+
+  // About C
+  &-c {
+    .about-logos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    img {
+      width: 70%;
+    }
+  }
+
+  &-d {
+    .container {
+      display: grid;
+      grid-template-areas:
+        'title title title title title'
+        'line line line line line'
+        'diploma1 diploma2 diploma3 diploma4 diploma5'
+        'diploma6 diploma7 diploma8 diploma9 diploma10';
+      gap: 1.2rem;
+    }
+
+    .section-title {
+      grid-area: title;
+    }
+
+    .bottom-line {
+      grid-area: line;
+    }
+
+    .courses-line {
+      margin-top: -1.4rem;
+    }
+
+    .diploma {
+      &-1 {
+        grid-area: diploma1;
+      }
+
+      &-2 {
+        grid-area: diploma2;
+      }
+
+      &-3 {
+        grid-area: diploma3;
+      }
+
+      &-4 {
+        grid-area: diploma4;
+      }
+
+      &-5 {
+        grid-area: diploma5;
+      }
+
+      &-6 {
+        grid-area: diploma6;
+      }
+
+      &-7 {
+        grid-area: diploma7;
+      }
+      &-8 {
+        grid-area: diploma8;
+      }
+
+      &-9 {
+        grid-area: diploma9;
+      }
+
+      &-10 {
+        grid-area: diploma10;
+      }
+    }
+
+    .lni {
+      color: $main-color;
+      margin: 1rem;
+    }
+  }
+}
+
+// Contact Page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        'name email'
+        'subject phone'
+        'message message';
+      gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+
+      .subject-input {
+        grid-area: subject;
+      }
+
+      .email-input {
+        grid-area: email;
+      }
+
+      .phone-input {
+        grid-area: phone;
+      }
+
+      .message-input {
+        grid-area: message;
+        height: 100px;
+        margin-bottom: 1.5rem;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type='submit'] {
+      width: 40%;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: set-text-color($dark-color);
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+
+      &:hover {
+        background: $main-color;
+      }
+    }
+  }
+}
+
+// Import Media Queries
+@import 'media';

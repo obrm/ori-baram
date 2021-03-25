@@ -1,0 +1,180 @@
+// Tablets & Smaller
+@media (max-width: 800px) {
+  #header {
+    &-home {
+      height: 30rem;
+
+      #logo {
+        margin-top: -0.8rem !important;
+      }
+
+      .header-content {
+        padding-top: 5rem;
+      }
+    }
+
+    &-inner {
+      #logo {
+        margin-top: -0.8rem !important;
+      }
+    }
+  }
+
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  #about {
+    &-a {
+      .about-info {
+        display: grid;
+        grid-template-areas:
+          'bioimage bioimage bioimage'
+          'bio bio bio' !important;
+      }
+
+      // Grid Areas
+      .bio-image {
+        grid-area: bioimage;
+        width: 60%;
+        margin: auto;
+      }
+
+      .bio {
+        grid-area: bio;
+        width: 80%;
+        padding: 1.5rem 4.5rem;
+        margin: auto;
+      }
+    }
+  }
+
+  // Contact Page
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'email'
+          'phone'
+          'subject'
+          'message';
+      }
+    }
+
+    &-b {
+      height: 100px;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 60% 10%;
+
+      .header-content {
+        display: none;
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  #about-a {
+    .bio {
+      width: 50%;
+      text-align: left;
+    }
+  }
+
+  #about-c {
+    display: none;
+  }
+
+  // Stack Grid Columns
+  #home-a .home-a,
+  #projects-a .items {
+    grid-template-columns: 1fr !important;
+  }
+
+  .items,
+  .item {
+    border: solid 0.1px $main-color;
+  }
+
+  #about-d {
+    .container {
+      grid-template-areas:
+        'title'
+        'line'
+        'diploma1'
+        'diploma2'
+        'diploma3'
+        'diploma4'
+        'diploma5'
+        'diploma6'
+        'diploma7'
+        'diploma8'
+        'diploma9'
+        'diploma10';
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+
+@media (max-height: 375px) {
+  #header-home {
+    #logo {
+      font-size: 1.5rem;
+      margin-top: 0.5rem !important;
+    }
+
+    .header-content {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #header-inner {
+    #logo {
+      font-size: 1.5rem;
+      margin-top: 0.5rem !important;
+    }
+  }
+}
