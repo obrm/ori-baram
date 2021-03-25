@@ -106,16 +106,16 @@ input[class^='btn-']:hover {
 .items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  -webkit-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
-  border: solid 0.8px #9b9b9b;
+  gap: 0.5rem;
   margin-bottom: 20px; }
 
 .item {
   position: relative;
   background: #6fd448;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 18px -8px rgba(0, 0, 0, 0.75); }
   .item::after {
     content: '';
     position: absolute;
@@ -151,8 +151,7 @@ input[class^='btn-']:hover {
     left: 0;
     width: 100%;
     height: auto;
-    line-height: 0;
-    border: solid 0.8px #292a2f; }
+    line-height: 0; }
   .item-text {
     position: absolute;
     top: 0;

@@ -399,9 +399,6 @@ img {
   #home-a .home-a,
   #projects-a .items {
     grid-template-columns: 1fr !important; }
-  .items,
-  .item {
-    border: solid 0.1px #6fd448; }
   #about-d .container {
     grid-template-areas: 'title' 'line' 'diploma1' 'diploma2' 'diploma3' 'diploma4' 'diploma5' 'diploma6' 'diploma7' 'diploma8' 'diploma9' 'diploma10'; }
   #main-footer {

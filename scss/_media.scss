@@ -114,11 +114,6 @@
     grid-template-columns: 1fr !important;
   }
 
-  .items,
-  .item {
-    border: solid 0.1px $main-color;
-  }
-
   #about-d {
     .container {
       grid-template-areas:
