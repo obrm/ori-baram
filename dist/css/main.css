@@ -291,9 +291,16 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name email' 'subject phone' 'message message' 'captcha captcha';
   gap: 1.2rem;
   margin-bottom: 1.2rem; }
+  #contact-a .text-fields .captcha {
+    text-align: center;
+    width: 100%;
+    grid-area: captcha; }
+    #contact-a .text-fields .captcha div {
+      display: inline-block;
+      margin: 0 auto; }
   #contact-a .text-fields .name-input {
     grid-area: name; }
   #contact-a .text-fields .subject-input {
@@ -366,7 +373,7 @@ img {
     padding: 1.5rem 4.5rem;
     margin: auto; }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'email' 'phone' 'subject' 'message'; }
+    grid-template-areas: 'name' 'email' 'phone' 'subject' 'message' 'captcha'; }
   #contact-b {
     height: 100px; } }
 

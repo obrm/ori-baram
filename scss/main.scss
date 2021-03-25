@@ -288,9 +288,21 @@ img {
       grid-template-areas:
         'name email'
         'subject phone'
-        'message message';
+        'message message'
+        'captcha captcha';
       gap: 1.2rem;
       margin-bottom: 1.2rem;
+
+      .captcha {
+        text-align: center;
+        width: 100%;
+        grid-area: captcha;
+
+        div {
+          display: inline-block;
+          margin: 0 auto;
+        }
+      }
 
       // Grid Areas
       .name-input {
