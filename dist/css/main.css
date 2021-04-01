@@ -396,8 +396,11 @@ img {
   #header-inner {
     height: 10rem; }
   #about-a .bio {
-    width: 50%;
-    text-align: left; }
+    width: 80%;
+    text-align: left;
+    padding: 1.5rem 1.5rem; }
+    #about-a .bio p {
+      font-size: 1.2rem; }
   #about-c {
     display: none; }
   #home-a .home-a,
