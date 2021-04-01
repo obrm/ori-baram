@@ -63,10 +63,6 @@
           'captcha';
       }
     }
-
-    &-b {
-      height: 100px;
-    }
   }
 }
 
@@ -83,12 +79,27 @@
 
   #header {
     &-home {
-      height: 10rem;
+      height: 23.5rem;
       border-bottom: 3px solid $main-color;
       background-position: 60% 10%;
 
       .header-content {
-        display: none;
+        // display: none;
+        padding-top: 1rem;
+
+        h1 {
+          font-size: 1.7rem;
+          font-weight: bold;
+          margin: 1rem 0;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        a {
+          // margin-top: -1rem;
+        }
       }
     }
 
@@ -110,7 +121,8 @@
 
   // Stack Grid Columns
   #home-a .home-a,
-  #projects-a .items {
+  #projects-a .items,
+  #contact-b .contact-info {
     grid-template-columns: 1fr !important;
   }
 
@@ -129,6 +141,20 @@
         'diploma8'
         'diploma9'
         'diploma10';
+    }
+  }
+
+  #contact-b {
+    div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px #fff dotted;
+    }
+
+    div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 

@@ -373,9 +373,7 @@ img {
     padding: 1.5rem 4.5rem;
     margin: auto; }
   #contact-a .text-fields {
-    grid-template-areas: 'name' 'email' 'phone' 'subject' 'message' 'captcha'; }
-  #contact-b {
-    height: 100px; } }
+    grid-template-areas: 'name' 'email' 'phone' 'subject' 'message' 'captcha'; } }
 
 @media (max-width: 500px) {
   #main-nav {
@@ -384,11 +382,17 @@ img {
     #main-nav li {
       padding: 1rem; }
   #header-home {
-    height: 10rem;
+    height: 23.5rem;
     border-bottom: 3px solid #6fd448;
     background-position: 60% 10%; }
     #header-home .header-content {
-      display: none; }
+      padding-top: 1rem; }
+      #header-home .header-content h1 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin: 1rem 0; }
+      #header-home .header-content p {
+        font-size: 1rem; }
   #header-inner {
     height: 10rem; }
   #about-a .bio {
@@ -397,10 +401,19 @@ img {
   #about-c {
     display: none; }
   #home-a .home-a,
-  #projects-a .items {
+  #projects-a .items,
+  #contact-b .contact-info {
     grid-template-columns: 1fr !important; }
   #about-d .container {
     grid-template-areas: 'title' 'line' 'diploma1' 'diploma2' 'diploma3' 'diploma4' 'diploma5' 'diploma6' 'diploma7' 'diploma8' 'diploma9' 'diploma10'; }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #fff dotted; }
+  #contact-b div:last-child {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0; }
   #main-footer {
     height: 7rem; }
     #main-footer .footer-content {
