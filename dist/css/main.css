@@ -366,7 +366,8 @@ img {
   #about-a .bio-image {
     grid-area: bioimage;
     width: 60%;
-    margin: auto; }
+    margin: auto;
+    border-radius: 50%; }
   #about-a .bio {
     grid-area: bio;
     width: 80%;
