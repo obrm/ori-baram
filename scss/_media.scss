@@ -150,17 +150,25 @@
     }
   }
 
-  #contact-b {
-    div {
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px #fff dotted;
+  #contact {
+    &-a {
+      form {
+        width: 100%;
+      }
     }
 
-    div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #fff dotted;
+      }
+
+      div:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
     }
   }
 
