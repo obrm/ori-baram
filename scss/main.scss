@@ -33,9 +33,17 @@ img {
 }
 
 #logo {
-  font-family: 'Racing Sans One', cursive;
-  font-size: 3rem;
-  color: $light-color;
+  a {
+    font-family: 'Racing Sans One', cursive;
+    font-size: 3rem;
+    color: $light-color !important;
+    text-transform: none !important;
+    border-bottom: none !important;
+  }
+
+  a:hover {
+    border-bottom: none !important;
+  }
 }
 
 // Main Nav
@@ -330,6 +338,11 @@ img {
       .text-input {
         padding: 0.5rem 1rem;
       }
+    }
+
+    form {
+      width: 60%;
+      margin: 0 auto;
     }
 
     button[type='submit'] {
