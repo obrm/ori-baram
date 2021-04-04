@@ -31,6 +31,15 @@
     @extend %btn-shared;
     color: #333;
     background-color: $light-color;
+
+    &-border {
+      @extend %btn-shared;
+      border: solid 1px #000;
+
+      &:hover {
+        border: solid 1px transparent;
+      }
+    }
   }
 
   &-dark {
@@ -123,6 +132,36 @@ input[class^='btn-']:hover {
   }
   &-4 {
     margin-top: 4rem;
+  }
+}
+
+.mt-n {
+  &1 {
+    margin-top: -1rem !important;
+  }
+  &2 {
+    margin-top: -2rem !important;
+  }
+  &3 {
+    margin-top: -3rem !important;
+  }
+  &4 {
+    margin-top: -4rem !important;
+  }
+}
+
+.mb {
+  &-1 {
+    margin-bottom: 1rem;
+  }
+  &-2 {
+    margin-bottom: 2rem;
+  }
+  &-3 {
+    margin-bottom: 3rem;
+  }
+  &-4 {
+    margin-bottom: 4rem;
   }
 }
 
