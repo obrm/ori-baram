@@ -1,5 +1,5 @@
 // Smooth Scrolling
-$('#main-nav a').on('click', function (e) {
+$('#main-nav a, .header-content a').on('click', function (e) {
   if (this.hash !== '') {
     e.preventDefault()
 
