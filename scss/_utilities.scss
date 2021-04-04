@@ -20,6 +20,11 @@
     @extend %btn-shared;
     color: #333;
     background-color: $main-color;
+
+    &:hover {
+      background-color: $dark-color;
+      color: $light-color;
+    }
   }
 
   &-light {

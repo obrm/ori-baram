@@ -15,6 +15,9 @@
 .btn-main {
   color: #333;
   background-color: #6fd448; }
+  .btn-main:hover {
+    background-color: #333;
+    color: #f4f4f4; }
 
 .btn-light {
   color: #333;
