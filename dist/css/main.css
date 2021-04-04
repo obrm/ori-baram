@@ -345,7 +345,8 @@ img {
     justify-content: space-between;
     height: 5rem;
     align-items: center; }
-    #main-footer .footer-content .social .fab {
+    #main-footer .footer-content .social .fab,
+    #main-footer .footer-content .social .fas {
       margin-right: 1rem;
       border: 2px #fff solid;
       border-radius: 50%;
@@ -354,7 +355,8 @@ img {
       line-height: 30px;
       text-align: center;
       color: #fff; }
-      #main-footer .footer-content .social .fab:hover {
+      #main-footer .footer-content .social .fab:hover,
+      #main-footer .footer-content .social .fas:hover {
         background: #6fd448; }
 
 @media (max-width: 800px) {
