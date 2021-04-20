@@ -25,6 +25,17 @@
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
+  .item-text-title,
+  .item-text-category {
+    margin-bottom: -0.5rem !important;
+  }
+
+  .item-text-description {
+    font-size: 1.15rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0.5rem !important;
+  }
+
   #about {
     &-a {
       .about-info {
@@ -126,6 +137,18 @@
   #projects-a .items,
   #contact-b .contact-info {
     grid-template-columns: 1fr !important;
+  }
+
+  .item {
+    &-text-title {
+      font-size: 1.5rem !important;
+    }
+    &-text-category {
+      font-size: 0.85rem !important;
+    }
+    &-text-description {
+      font-size: 1.15rem !important;
+    }
   }
 
   #about-d {

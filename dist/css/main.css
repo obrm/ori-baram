@@ -402,6 +402,13 @@ img {
   .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important; }
+  .item-text-title,
+  .item-text-category {
+    margin-bottom: -0.5rem !important; }
+  .item-text-description {
+    font-size: 1.15rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0.5rem !important; }
   #about-a .about-info {
     display: grid;
     grid-template-areas: 'bioimage bioimage bioimage' 'bio bio bio' !important; }
@@ -450,6 +457,12 @@ img {
   #projects-a .items,
   #contact-b .contact-info {
     grid-template-columns: 1fr !important; }
+  .item-text-title {
+    font-size: 1.5rem !important; }
+  .item-text-category {
+    font-size: 0.85rem !important; }
+  .item-text-description {
+    font-size: 1.15rem !important; }
   #about-d .container {
     grid-template-areas: 'title' 'line' 'diploma1' 'diploma2' 'diploma3' 'diploma4' 'diploma5' 'diploma6' 'diploma7' 'diploma8' 'diploma9' 'diploma10'; }
   #contact-a form {
