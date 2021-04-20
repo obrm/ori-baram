@@ -129,7 +129,10 @@
   }
 
   #about-c {
-    display: none;
+    padding-left: 1.5rem;
+    .about-logos {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   // Stack Grid Columns

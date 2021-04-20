@@ -269,13 +269,14 @@ img {
     text-align: center;
     background: #6fd448; }
 
-#about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem; }
-
-#about-c img {
-  width: 70%; }
+#about-c {
+  padding-left: 3rem; }
+  #about-c .about-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; }
+  #about-c img {
+    width: 70%; }
 
 #about-d .container {
   display: grid;
@@ -452,7 +453,9 @@ img {
     #about-a .bio p {
       font-size: 1.2rem; }
   #about-c {
-    display: none; }
+    padding-left: 1.5rem; }
+    #about-c .about-logos {
+      grid-template-columns: repeat(2, 1fr); }
   #home-a .home-a,
   #projects-a .items,
   #contact-b .contact-info {
