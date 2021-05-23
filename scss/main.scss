@@ -152,6 +152,12 @@ img {
   }
 }
 
+.diploma-link {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 // About Sections
 #about {
   &-a {

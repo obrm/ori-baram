@@ -233,6 +233,9 @@ img {
     height: 90px;
     line-height: 90px; }
 
+.diploma-link a:hover {
+  text-decoration: underline; }
+
 #about-a .about-info {
   display: grid;
   grid-template-areas: 'bioimage bioimage bio bio bio';
