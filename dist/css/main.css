@@ -280,7 +280,7 @@ img {
   padding-left: 3rem; }
   #about-c .about-logos {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem; }
   #about-c img {
     width: 70%; }
@@ -430,6 +430,8 @@ img {
     width: 80%;
     padding: 1.5rem 4.5rem;
     margin: auto; }
+  #about-c .about-logos .mt-4 {
+    margin-top: 2rem; }
   #contact-a .text-fields {
     grid-template-areas: 'name' 'email' 'phone' 'subject' 'message' 'captcha'; } }
 
