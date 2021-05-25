@@ -144,7 +144,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #333; }
+  color: #fff; }
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff; }
 
 ul {
   list-style: none; }
@@ -393,6 +398,10 @@ img {
       #main-footer .footer-content .social .fas:hover {
         background: #6fd448; }
 
+@media (max-width: 1200px) {
+  .item-text-description {
+    display: none; } }
+
 @media (max-width: 800px) {
   #header-home {
     height: 30rem; }
@@ -408,10 +417,6 @@ img {
   .item-text-title,
   .item-text-category {
     margin-bottom: -0.5rem !important; }
-  .item-text-description {
-    font-size: 1.15rem !important;
-    line-height: 1.2 !important;
-    margin-top: 0.5rem !important; }
   #about-a .about-info {
     display: grid;
     grid-template-areas: 'bioimage bioimage bioimage' 'bio bio bio' !important; }

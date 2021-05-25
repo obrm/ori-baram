@@ -1,4 +1,10 @@
 // Tablets & Smaller
+@media (max-width: 1200px) {
+  .item-text-description {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   #header {
     &-home {
@@ -28,12 +34,6 @@
   .item-text-title,
   .item-text-category {
     margin-bottom: -0.5rem !important;
-  }
-
-  .item-text-description {
-    font-size: 1.15rem !important;
-    line-height: 1.2 !important;
-    margin-top: 0.5rem !important;
   }
 
   #about {

@@ -95,7 +95,6 @@
   &-text-title {
     font-size: 2rem;
     padding: 0 1rem;
-    margin-top: 5px;
   }
 
   &-text-category {
@@ -107,5 +106,14 @@
   &-text-description {
     font-size: 1.3rem;
     margin: 0 3rem;
+    line-height: 1.2;
+  }
+
+  &-links {
+    margin-top: 15px;
+
+    h4 {
+      margin-top: 5px;
+    }
   }
 }
