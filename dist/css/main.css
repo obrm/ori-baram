@@ -23,7 +23,8 @@
   color: #333;
   background-color: #f4f4f4; }
   .btn-light-border {
-    border: solid 1px #000; }
+    border: solid 1px #000;
+    color: #000; }
     .btn-light-border:hover {
       border: solid 1px transparent; }
 
@@ -237,6 +238,9 @@ img {
     width: 90px;
     height: 90px;
     line-height: 90px; }
+
+.diploma-link a {
+  color: #000 !important; }
 
 .diploma-link a:hover {
   text-decoration: underline; }

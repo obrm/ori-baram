@@ -159,6 +159,9 @@ img {
 }
 
 .diploma-link {
+  a {
+    color: #000 !important;
+  }
   a:hover {
     text-decoration: underline;
   }
