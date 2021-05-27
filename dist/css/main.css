@@ -14,10 +14,13 @@
 
 .btn-main {
   color: #333;
-  background-color: #6fd448; }
+  background-color: #6fd448;
+  border: solid 1px transparent;
+  font-size: 1rem; }
   .btn-main:hover {
-    background-color: #333;
-    color: #f4f4f4; }
+    background-color: #f4f4f4;
+    color: #333;
+    border: solid 1px #333; }
 
 .btn-light {
   color: #333;
